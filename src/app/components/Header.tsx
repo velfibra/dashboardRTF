@@ -15,7 +15,7 @@ export default function Header() {
     }`;
 
   return (
-    <div className="flex items-center gap-4 justify-around w-1/2 max-lg:flex-col">
+    <div className="flex items-center gap-4 justify-around w-full max-lg:flex-col">
       <Image src="/logo.png" alt="logo-vel" width={200} height={200} />
       <div className="flex justify-center gap-4 bg-gray-800 rounded-xl px-3 py-2">
         <Link href="/" className={linkClass("/")}>

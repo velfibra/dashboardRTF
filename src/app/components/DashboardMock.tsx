@@ -105,13 +105,15 @@ export default function DashboardZabbix() {
 
   return (
     <div className="p-2 min-h-screen bg-black/90">
-      <Header />
-      <FiltersBar
-        searchTerm={searchTerm}
-        setSearchTerm={setSearchTerm}
-        showOnlyAlerts={showOnlyAlerts}
-        setShowOnlyAlerts={setShowOnlyAlerts}
-      />
+      <div className="flex justify-around">
+        <Header />
+        <FiltersBar
+          searchTerm={searchTerm}
+          setSearchTerm={setSearchTerm}
+          showOnlyAlerts={showOnlyAlerts}
+          setShowOnlyAlerts={setShowOnlyAlerts}
+        />
+      </div>
 
       <div className="mt-10">
         {filteredMachines.length === 0 ? (

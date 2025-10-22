@@ -21,3 +21,19 @@ export interface DisplayRetificadora {
   bankConsumption: Item[];
   contract?: string;
 }
+
+export interface Host {
+  hostid: string;
+  host: string;
+  name: string;
+  items: Item[];
+}
+
+export interface DisplaySwitch {
+  hostid: string;
+  name: string;
+  pingStatus: "UP" | "DOWN";
+  loss: number;
+  latency: number;
+  lastclock: number;
+}
