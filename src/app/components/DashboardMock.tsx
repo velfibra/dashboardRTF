@@ -105,7 +105,7 @@ export default function DashboardZabbix() {
 
   return (
     <div className="p-2 min-h-screen bg-black/90">
-      <div className="flex justify-around">
+      <div className="flex justify-around max-lg:flex-col">
         <Header />
         <FiltersBar
           searchTerm={searchTerm}

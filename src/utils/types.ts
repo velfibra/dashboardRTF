@@ -37,3 +37,16 @@ export interface DisplaySwitch {
   latency: number;
   lastclock: number;
 }
+
+export interface InterfaceLink {
+  name: string;
+  key_: string;
+  lastvalue: number;
+  lastclock: number;
+}
+
+export interface ClientLinkCardProps {
+  clientName: string;
+  rotaA?: InterfaceLink;
+  rotaB?: InterfaceLink;
+}

@@ -14,7 +14,7 @@ export default function FiltersBar({
   setShowOnlyAlerts,
 }: FiltersBarProps) {
   return (
-    <div className="flex flex-col sm:flex-row items-center justify-between mb-2 gap-2 w-[90%] mx-auto">
+    <div className="flex flex-col sm:flex-row items-center justify-between mb-2 gap-2 w-[90%] mx-auto max-lg:mt-5">
       <input
         type="text"
         placeholder="Pesquisar"
